@@ -395,6 +395,80 @@ public class ClassName : MonoBehaviour
 ----
 </details>
 
+
+<details><summary>Возвращаемый тип</summary>
+
+----
+Возвращаемым типом может быть любой имеющийся тип, например:
+
+* `bool` — это тип метода, который возвращает только true (Правда) или false (Ложь)
+
+* `int` — это тип метода, который возвращает целое число (Пример: 2)
+
+* `float` — это тип метода, который возвращает число с плавающей запятой (137.5f == 137,52323)
+  
+* `string` — это тип метода, который  просто возвращает текст
+  
+<details><summary>Примеры</summary> 
+	
+```
+public class ClassName : MonoBehaviour
+{
+
+	public bool FunctionName()
+	{
+		return  false;
+	}
+
+	private void Start()
+	{
+
+		Debug.Log("Мы получили " + FunctionName());
+		
+	}
+
+}
+```
+
+```
+public class ClassName : MonoBehaviour
+{
+	public int money = 15;
+	public int FunctionName()
+	{
+		return  10; 
+	}
+
+	private void Start()
+	{
+		Debug.Log("Сумма " + FunctionName() + " и у вас " + money + " денег.");
+	}
+}
+```
+
+```
+public class ClassName : MonoBehaviour
+{
+	public float FunctionName()
+	{
+	        return 127.5f;
+	}
+	private void Start()
+	{
+
+	Debug.Log("Всё работает на " + FunctionName()+ " %");
+	}
+}
+```
+
+</details>
+
+----
+
+
+</details>
+
+
 <details><summary>Дополнительно</summary>
 	
 ----
