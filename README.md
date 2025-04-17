@@ -14,7 +14,7 @@
 
 **[Атрибут] МодификаторДоступа Тип Название**
 
-<details>
+<details markdown='1'>
 <summary>Атрибут</summary>
 
 ----
@@ -30,7 +30,8 @@
 ----
 </details>
 
-<details><summary>Модификаторы доступа</summary>
+<details markdown='1'>
+<summary>Модификаторы доступа</summary>
 	
 ----
 Используется для обозначения доступности переменной из других классов (скриптов)
@@ -69,7 +70,8 @@ private
 ----
 </details>
 
-<details><summary>Название</summary>
+<details markdown='1'>
+<summary>Название</summary>
 
 ----
 Используется при обращении к объявленной переменной в скрипте
@@ -123,7 +125,9 @@ public void FunctionName()
 }
 ```
 
-<details><summary>Создание локальной перемменной в методе</summary>
+<details markdown='1'>
+
+<summary>Создание локальной перемменной в методе</summary>
 
 ----
 Локальной переменная - это переменная, которая существует внутри метода.
@@ -152,7 +156,9 @@ public class ClassName: MonoBehaviour
 
 </details>
 
-<details><summary>Модификаторы доступа</summary>
+<details markdown='1'>
+
+<summary>Модификаторы доступа</summary>
 
 ----
 
@@ -198,7 +204,8 @@ public class ClassName : MonoBehaviour
 	}
 }
 ```
-<details><summary>Дополнительно</summary>
+<details markdown='1'>
+<summary>Дополнительно</summary>
 	
 `protected` - доступен только классам-наследникам
 
@@ -228,7 +235,8 @@ public class ClassChild: ClassParent // Наследник
 ----
 </details>
 
-<details><summary>Название</summary>
+<details markdown='1'>
+<summary>Название</summary>
 
 ----
 Используется при обращении к объявленном методе в скрипте
@@ -250,7 +258,8 @@ public class ClassChild: ClassParent // Наследник
 ----
 </details>
 
-<details><summary>Аргумент</summary>
+<details markdown='1'>
+<summary>Аргумент</summary>
 
 ----
 
@@ -258,7 +267,8 @@ public class ClassChild: ClassParent // Наследник
 
 В методе может быть несколько аргументов
 
-<details><summary>Пример</summary>
+<details markdown='1'>
+<summary>Пример</summary>
 	
 ```csharp
 // ClassName.cs
@@ -290,7 +300,8 @@ public class ClassName : MonoBehaviour
 * ``Transfrom`` — Ссылка на компонент ``Transform`` у объекта
 * ``GameObject `` — Ссылка на объект в Unity
 
-<details><summary>Примеры вызовов методов с аргументами</summary>
+<details markdown='1'>
+<summary>Примеры вызовов методов с аргументами</summary>
 
 ```csharp
 public class ClassName : MonoBehaviour
@@ -357,13 +368,15 @@ public class ClassName : MonoBehaviour
 ----
 </details>
 
-<details><summary>Прервать метод</summary>
+<details markdown='1'>
+<summary>Прервать метод</summary>
 	
 ----
 	
 Для прерывания метода мы используем ``return`` - это ключевое слово, которое используется для завершения выполнения метода или возврата значения из этого метода.
 
-<details><summary>Пример</summary>
+<details markdown='1'>
+<summary>Пример</summary>
 
 ```csharp
 public class ClassName : MonoBehaviour
@@ -407,7 +420,8 @@ public class ClassName : MonoBehaviour
 </details>
 
 
-<details><summary>Возвращаемый тип</summary>
+<details markdown='1'>
+<summary>Возвращаемый тип</summary>
 
 ----
 Возвращаемым типом может быть любой имеющийся тип, например:
@@ -420,7 +434,8 @@ public class ClassName : MonoBehaviour
   
 * `string` — это тип метода, который  просто возвращает текст
   
-<details><summary>Примеры</summary> 
+<details markdown='1'>
+<summary>Примеры</summary> 
 	
 ```csharp
 public class ClassName : MonoBehaviour
@@ -480,11 +495,13 @@ public class ClassName : MonoBehaviour
 </details>
 
 
-<details><summary>Дополнительно</summary>
+<details markdown='1'>
+<summary>Дополнительно</summary>
 	
 ----
 	
-<details><summary>Перегрузка метода</summary>
+<details markdown='1'>
+<summary>Перегрузка метода</summary>
 
 ----
 
@@ -545,7 +562,8 @@ public class ClassName : MonoBehaviour
 
 Эти конструкции используются для того, чтобы выбрать, какой из путей кода следует выполнять на основе логического выражения.
 
-<details><summary>Конструкция условий</summary>
+<details markdown='1'>
+<summary>Конструкция условий</summary>
 
 ----
 
@@ -579,7 +597,8 @@ else
 }
 ```
 
-<details><summary>Логические операции</summary>
+<details markdown='1'>
+<summary>Логические операции</summary>
 
 ----
 
@@ -657,7 +676,8 @@ else
 </details>
 
 
-<details><summary>Использование условий на практике</summary>
+<details markdown='1'>
+<summary>Использование условий на практике</summary>
 
 **Пример 1**
  
@@ -852,7 +872,8 @@ names.Remove("Арсений"); // Удалить элемент
 Debug.Log(names[0]); // Вывод: Данил
 ```
 
-<details><summary>Полезные методы</summary>
+<details markdown='1'>
+<summary>Полезные методы</summary>
 
 **Основные методы списков:**
 
