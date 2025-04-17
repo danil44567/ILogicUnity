@@ -50,7 +50,8 @@ private
 ----
 </details>
 
-<details><summary>Тип</summary>
+<details markdown='1'>
+<summary>Тип</summary>
 
 ----
 Указывает на тип переменной, это может быть любой доступный тип
