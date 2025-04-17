@@ -13,7 +13,7 @@
 Указывается внутри [ ]
 
 Например атрибут позволяющий  сделать переменную видимой в ``инспекторе``:
-```
+```csharp
 [SerializeField]
 ```
 
@@ -28,12 +28,12 @@
 На данный момент используем два основных модификатора доступа
 
 Модификатор, указывающий на то, что к нашей переменной могут обращаться извне, а также позволяющий видеть нашу переменную в окне инспектора:
-```
+```csharp
 public
 ```
 
 Модификатор, скрывающий переменную от остальных классов:
-```
+```csharp
 private
 ```
 Модификатор доступа не является обязательным атрибутом, если его не указать то будет использован модификатор ``private``
@@ -83,21 +83,21 @@ private
 #### Примеры
 
 Целочисленная переменная с именем `count` доступная другим классам и отображаемая в инспекторе:
-```
+```csharp
 public int count;
 ```
 Переменная с числом с плавающей точкой с именем `speed`, доступная другим классам и отображаемая в инспекторе:
-```
+```csharp
 public float speed;
 ```
 
 Переменная, ссылающаяся на объект сцены `GameObject`, не доступная другим классам, но отображаемая в инспекторе:
-```
+```csharp
 [SerializeField] private GameObject target;
 ```
 
 Логическая переменная, не доступная другим классам и не отображаемая в инспекторе:
-```
+```csharp
 private bool isCheck;
 ```
 
@@ -105,7 +105,7 @@ private bool isCheck;
 Синтаксис написания метода: **МодификаторДоступа ВозвращаемыйТип Название (Аргумент)**
 
 `void` — это специальный тип методов, который говорит, что метод ничего не возвращает 
-```
+```csharp
 public void FunctionName() 
 {
 	// Код выполняемый функцией
@@ -121,7 +121,7 @@ public void FunctionName()
 
 **Пример**
 
-```
+```csharp
 public class ClassName: MonoBehaviour
 {
 	public void FunctionName() 
@@ -148,7 +148,7 @@ public class ClassName: MonoBehaviour
 `public` - доступен из любого внешнего скрипта
 
 **Пример**
-```
+```csharp
 // ClassA.cs
 public class ClassA : MonoBehaviour
 {
@@ -172,7 +172,7 @@ public class ClassB: MonoBehaviour
 `private`- доступен только внутри класса
 
 **Пример**
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 	private void FunctionName() 
@@ -192,7 +192,7 @@ public class ClassName : MonoBehaviour
 `protected` - доступен только классам-наследникам
 
 **Пример**
-```
+```csharp
 public class ClassParent: MonoBehaviour // Родитель
 {
 	protected void FunctionName() 
@@ -249,7 +249,7 @@ public class ClassChild: ClassParent // Наследник
 
 <details><summary>Пример</summary>
 	
-```
+```csharp
 // ClassName.cs
 public class ClassName : MonoBehaviour
 {
@@ -281,7 +281,7 @@ public class ClassName : MonoBehaviour
 
 <details><summary>Примеры вызовов методов с аргументами</summary>
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
     public void ShowMessage(int message)
@@ -296,7 +296,7 @@ public class ClassName : MonoBehaviour
 
 ```
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
     public void ShowMessage(float message)
@@ -311,7 +311,7 @@ public class ClassName : MonoBehaviour
 
 ```
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
     public void ShowMessage(string message)
@@ -326,7 +326,7 @@ public class ClassName : MonoBehaviour
 
 ```
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
     public void ShowMessage(bool message)
@@ -354,7 +354,7 @@ public class ClassName : MonoBehaviour
 
 <details><summary>Пример</summary>
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 	public int playerMoney = 50; // Количество денег
@@ -411,7 +411,7 @@ public class ClassName : MonoBehaviour
   
 <details><summary>Примеры</summary> 
 	
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 
@@ -430,7 +430,7 @@ public class ClassName : MonoBehaviour
 }
 ```
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 	public int money = 15;
@@ -446,7 +446,7 @@ public class ClassName : MonoBehaviour
 }
 ```
 
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 	public float FunctionName()
@@ -480,7 +480,7 @@ public class ClassName : MonoBehaviour
 Это возможность создавать несколько методов с одним и тем же именем, но с различными аргументами. Это позволяет использовать одно и то же имя метода для выполнения схожих, но немного различных задач. 
 
 Перегрузка методов помогает сделать код более читаемым и удобным.
-```
+```csharp
 public class ClassName : MonoBehaviour
 {
 	public int FunctionName(int a, int b)
@@ -549,7 +549,7 @@ public class ClassName : MonoBehaviour
 ----
 </details>
 
-```
+```csharp
 if (условие1)
 {
 	// Код, выполняемый, если условие1 = истина
@@ -584,7 +584,7 @@ else
 
 Если хотя бы одно из условий выполнено, то булевая переменная примет значение  `true` (истина). Если же ни одно из условий не будет выполнено, то переменная получит значение `false` (ложь).
 
-```
+```csharp
 	public int a = 6;
     	public int w = 2;
     	void Start()
@@ -605,7 +605,7 @@ else
 
 В данном примере мы используем условные операторы `if` для проверки различных условий.
 
-```
+```csharp
 
     	public int a = 4; // Объявляем переменную a и присваиваем ей значение 4
     	public int w = 10; // Объявляем переменную w и присваиваем ей значение 10
@@ -652,7 +652,7 @@ else
  
 Проверка на количества здоровья у персонажа.
 
-```
+```csharp
 
 public int health = 100;
 
@@ -682,7 +682,7 @@ void Update()
 
 Проверка на включенный буст для добавления скорости. 
 
-```
+```csharp
 
 public int baseSpeed = 5;
 public bool speedBoostActive = false;
@@ -715,7 +715,7 @@ void Update()
 
 Проверка количества денег и времени 
 
-```
+```csharp
 
 public float time = 20;
 
@@ -860,8 +860,6 @@ Debug.Log(names[0]); // Вывод: Данил
 
 - Используй **массив**, если количество элементов известно и не изменится (например, 4 колеса машины).
 - Используй **список**, если количество элементов может меняться (например, список врагов в игре).
-
-**Пример в Unity:**
 
 **Пример в Unity:**
 
